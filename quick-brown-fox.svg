@@ -6,7 +6,6 @@
      <script xlink:href="//use.typekit.net/cjx2wvt.js"></script>
      <script type="text/javascript">
         // <![CDATA[
-        alert('test');
         try{Typekit.load();}catch(e){}
         // ]]>
     </script>
