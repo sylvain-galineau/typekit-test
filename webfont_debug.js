@@ -56,7 +56,7 @@ function $JSCompiler_StaticMethods_whenBodyExists$$($JSCompiler_StaticMethods_wh
 function $JSCompiler_StaticMethods_updateClassName$$($e$$15$$, $add_opt_add_remainingClasses$$, $opt_remove_remove$$) {
   $add_opt_add_remainingClasses$$ = $add_opt_add_remainingClasses$$ || [];
   $opt_remove_remove$$ = $opt_remove_remove$$ || [];
-  for (var $classes$$ = $e$$15$$.className.split(/\s+/), $i$$7$$ = 0;$i$$7$$ < $add_opt_add_remainingClasses$$.length;$i$$7$$ += 1) {
+  for (var $classes$$ = $e$$15$$baseVal.split(/\s+/), $i$$7$$ = 0;$i$$7$$ < $add_opt_add_remainingClasses$$.length;$i$$7$$ += 1) {
     for (var $found$$ = !1, $j$$1$$ = 0;$j$$1$$ < $classes$$.length;$j$$1$$ += 1) {
       if ($add_opt_add_remainingClasses$$[$i$$7$$] === $classes$$[$j$$1$$]) {
         $found$$ = !0;
@@ -79,7 +79,7 @@ function $JSCompiler_StaticMethods_updateClassName$$($e$$15$$, $add_opt_add_rema
   $e$$15$$.className = $add_opt_add_remainingClasses$$.join(" ").replace(/\s+/g, " ").replace(/^\s+|\s+$/, "");
 }
 function $JSCompiler_StaticMethods_hasClassName$$($e$$16$$, $name$$53$$) {
-  for (var $classes$$1$$ = $e$$16$$.className.split(/\s+/), $i$$8$$ = 0, $len$$ = $classes$$1$$.length;$i$$8$$ < $len$$;$i$$8$$++) {
+  for (var $classes$$1$$ = $e$$16$$baseVal.split(/\s+/), $i$$8$$ = 0, $len$$ = $classes$$1$$.length;$i$$8$$ < $len$$;$i$$8$$++) {
     if ($classes$$1$$[$i$$8$$] == $name$$53$$) {
       return!0;
     }
