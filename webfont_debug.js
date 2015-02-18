@@ -76,7 +76,7 @@ function $JSCompiler_StaticMethods_updateClassName$$($e$$15$$, $add_opt_add_rema
     }
     $found$$ || $add_opt_add_remainingClasses$$.push($classes$$[$i$$7$$]);
   }
-  $e$$15$$.className = $add_opt_add_remainingClasses$$.join(" ").replace(/\s+/g, " ").replace(/^\s+|\s+$/, "");
+  $e$$15$$.className.baseVal = $add_opt_add_remainingClasses$$.join(" ").replace(/\s+/g, " ").replace(/^\s+|\s+$/, "");
 }
 function $JSCompiler_StaticMethods_hasClassName$$($e$$16$$, $name$$53$$) {
   for (var $classes$$1$$ = $e$$16$$.className.baseVal.split(/\s+/), $i$$8$$ = 0, $len$$ = $classes$$1$$.length;$i$$8$$ < $len$$;$i$$8$$++) {
